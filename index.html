@@ -14,10 +14,8 @@
 		<h1>Dawn Vinson</h1>
 		<nav>
   
-			<ul>
-			  <li><a href="index.html">Home</a></li>
-			  <li><a href="library.html">Library</a></li>
-			  <li><a href="technology.html">Technology</a></li>
+			<a class="btn btn-secondary" href="index.html" role="button">Home</a>       <a class="btn btn-secondary" href="library.html" role="button">Library</a>      
+      <a class="btn btn-secondary" href="technology.html" role="button">Technology</a>
 			  
 			
 		  </nav>
@@ -34,43 +32,72 @@
 			me busy, watching her in soccer and cheerleading. In my free time,
 			I enjoy cooking, reading, all types of puzzles, and binge watching TV. 
 		</p>
-		</div>
+    </div>
+	<div class="container">
 		<h3>My Favorite Ed Tech Tools</h3>
-		<ul>
-			<li>Nearpod</li>
-			<p>Nearpod is great because it lets teachers use or create
-				interactive lessons. Teachers can inbed slides with information,
-				photos, videos, polls, or questions and practice activities. 
-				Students can answer multiple-choice 
-				or short answer questions, draw and label slides, match pairs, 
-				and fill in the blanks. The teacher controls the pace of the lesson
-				or can choose a self-paced lesson for students. At the end of each
-				lesson, the teacher is given a report showing all lesson activity
-				and answers.
-			</p>
-			<li>Flipgrid</li>
-			<p>Flipgrid is a powerful video discussion platform. The teacher poses
-				a topic and students respond through video. Students view and respond
-				to each other's videos as well. Students can personalize their videos with a 
-				variety of stickers, sticky notes, and other cool features. Make every 
-				voice heard with Flipgrid.
-			</p>
-			<li>Hummingbird Robotics</li>
-			<p>I am in love with the possibilities using Hummingbird Robotics. Students
-				can create projects with sensing, thinking, and acting parts. Each kit
-				comes with LEDs, rotation and position servos, and sensors (light, distance
-				sound, dial). Students code their robot to light up, move, and react
-				just the way they want.
-			</p>
-			<li>Microbit Classroom</li>
-			<p>Microbit classroom allows the teacher to manage coding lessons easily. 
-				Teachers can share code with and between students, view student progress, 
-				and save and resume their work. You can choose your coding language (Microsoft 
-				MakeCode or Python). Teachers can add extension coding packs to work with
-				other robots such as the <em>Hummingbird</em> bit.
-			</p>
-		</ul>
-	
+		
+    <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Nearpod
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Nearpod is great because it lets teachers use or create interactive lessons. Teachers can inbed slides with information, photos, videos, polls, or questions and practice activities. Students can answer multiple-choice or short answer questions, draw and label slides, match pairs, and fill in the blanks. The teacher controls the pace of the lesson or can choose a self-paced lesson for students. At the end of each lesson, the teacher is given a report showing all lesson activity and answers.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Flipgrid
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Flipgrid is a powerful video discussion platform. The teacher poses a topic and students respond through video. Students view and respond to each other's videos as well. Students can personalize their videos with a variety of stickers, sticky notes, and other cool features. Make every voice heard with Flipgrid.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Hummingbird Robotics
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        I am in love with the possibilities using Hummingbird Robotics. Students can create projects with sensing, thinking, and acting parts. Each kit comes with LEDs, rotation and position servos, and sensors (light, distance sound, dial). Students code their robot to light up, move, and react just the way they want.
+      </div>
+    </div>
+  </div>
+</div>
+     <div class="card">
+    <div class="card-header" id="headingFour">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Microbit Classroom
+        </button>
+      </h2>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+      <div class="card-body">
+        Microbit classroom allows the teacher to manage coding lessons easily. Teachers can share code with and between students, view student progress, and save and resume their work. You can choose your coding language (Microsoft MakeCode or Python). Teachers can add extension coding packs to work with other robots such as the Hummingbird bit.
+      </div>
+    </div>
+  </div>
+</div>
+			</div>
+			
 	
 
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
