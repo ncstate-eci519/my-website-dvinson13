@@ -20,41 +20,9 @@ h1, h2, h3 {
   margin: auto;
   
 }
+.gray{background-color: gainsboro;}
 
-.question{
-    display: block;
-    background-color: #868782;
-    color: white;
-    padding: 20px;
-    border: solid #000000
-}
-nav{
-    background-color: #868782;
-    padding: 5px;
-  }
   
-  nav ul{
-    list-style-type: none;
-    display: inline;
-    font-family: volkhov;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-  }
   
-  nav a{
-    color: white;
-  }
-  
-  @media (max-width: 768px){
-    nav ul{
-      display: block;
-    }
-    nav li{
-      margin: auto;
-      padding: 10px;
-      text-align: center;
-    }
     
-  }
+  
