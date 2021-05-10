@@ -1,9 +1,30 @@
+
 $(document).ready(function(){
-  $("#toggler").click(function(){
-    $(".form-group").toggle();
-    $("form").submit(function(){
-      event.preventDefault();
-      var webform = $.post("https://maker.ifttt.com/trigger/webform/with/key/cIMCLpyvyaP1uljIYwyhUN"), JSON.stringify({"value1": $("email").val(), "value2": $("problem").val()});
-    })
-  });
+  $("form").submit(function(){
+    event.preventDefault();
+    var toSubmit = {};
+    toSubmit.email = $("#email").val();
+    toSubmit.name = $("#name").val();
+    toSubmit.message = $("#message").val();
+    $.ajaxSetup({
+      headers: {
+        'Accept': "application/json",
+      }
+    });
+    
+    var form_submit = $.post("https://formspree.io/f/mleajegk", toSubmit);
+    
+    form_submit.done(function(){
+      $("#form-success").modal('show');
+      $("#email").val("");
+      $("#name").val("");
+      $("#message").val("");
+    });
+    
+    form_submit.fail(function(){
+      $("#form-error").modal('show');
+    });
+    
+    
+  })
 });
